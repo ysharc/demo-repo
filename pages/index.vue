@@ -45,11 +45,11 @@ const breadcrumbs = ref([
   <LcFullVerticalHeader v-if="!customizer.setHorizontalLayout" />
   <v-row>
     <!---Stats overview--->
-    <v-col cols="12" sm="12" lg="8">
+    <v-col cols="12" sm="6" md="8">
       <TheStatsCards />
     </v-col>
     <!---Recent Influencers--->
-    <v-col cols="12" sm="12" lg="4">
+    <v-col cols="12" sm="6" md="4">
       <MSRecentInfluencers />
     </v-col>
     <v-col cols="12" sm="12" lg="12">
@@ -58,7 +58,7 @@ const breadcrumbs = ref([
         </v-btn></h3>
     </v-col>
     <!---Analytics--->
-    <v-col cols="12" sm="12" lg="8">
+    <v-col cols="12" sm="6" lg="7">
       <MSTraffic />
       <div class="mt-7"></div>
       <MSReports />
@@ -66,7 +66,7 @@ const breadcrumbs = ref([
       <MSPlatforms />
     </v-col>
     <!---Profile card /my contacts--->
-    <v-col cols="12" sm="12" lg="4">
+    <v-col cols="12" sm="6" lg="5">
       <MSDevices />
       <div class="mt-7"></div>
       <MSInfluencerTeams />

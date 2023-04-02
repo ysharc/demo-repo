@@ -4,7 +4,7 @@ import { statsCardsData } from '@/_mockApis/components/dashboards/MSData';
 </script>
 <template>
     <v-row class="mt-1">
-        <v-col cols="12" xl="4" lg="6" md="4" sm="6" v-for="statscard in statsCardsData" :statscard="statscard"
+        <v-col cols="6" xl="4" lg="6" md="4" sm="6" v-for="statscard in statsCardsData" :statscard="statscard"
             :key="statscard.title" class="py-0 mb-3">
             <VCard elevation="10">
                 <v-card-text class="pa-5">
@@ -13,11 +13,11 @@ import { statsCardsData } from '@/_mockApis/components/dashboards/MSData';
                             <component :is="statscard.icon" color="primary" stroke-width="2" size="20" />
                         </v-btn>
                         <div class="ml-2 mr-1">
-                            <h4 class="text-subtitle-1">
+                            <h4 class="text-h7" style="font-weight: 600;">
                                 {{ statscard.title }}
                             </h4>
                             <h2 class="text-h4 mt-1">
-                                {{ statscard.number }}
+                                <b>{{ statscard.number }}</b>
                             </h2>
                         </div>
                     </div>
