@@ -1,0 +1,37 @@
+<script setup lang="ts">
+import { ref, shallowRef } from 'vue';
+import { useCustomizerStore } from '@/stores/customizer';
+import sidebarItems from './sidebarItem';
+const customizer = useCustomizerStore();
+const sidebarMenu = shallowRef(sidebarItems);
+</script>
+
+<template>
+    <v-navigation-drawer left v-model="customizer.Sidebar_drawer" elevation="0" rail-width="75" mobile-breakpoint="960" app
+        class="leftSidebar" :rail="customizer.mini_sidebar" expand-on-hover width="270">
+        <!-- ---------------------------------------------- -->
+        <!---Navigation -->
+        <!-- ---------------------------------------------- -->
+        <perfect-scrollbar class="scrollnavbar mt-6">
+            <div class="d-sm-flex d-none ml-3">
+                <LcFullLogo />
+            </div>
+            <div class="pr-2 pt-2 d-sm-none d-flex ml-2">
+                <LcFullLogoIcon />
+            </div>
+            <v-list class="py-5 px-4 bg-muted mt-6" density="compact">
+                <!---Menu Loop -->
+                <template v-for="(item, i) in sidebarMenu">
+                    <!---Item Sub Header -->
+                    <LcFullVerticalSidebarNavGroup :item="item" v-if="item.header" :key="item.title" />
+                    <!---If Has Child -->
+                    <LcFullVerticalSidebarNavCollapse class="leftPadding" :item="item" :level="0"
+                        v-else-if="item.children" />
+                    <!---Single Item-->
+                    <LcFullVerticalSidebarNavItem :item="item" v-else class="leftPadding" />
+                    <!---End Single Item-->
+                </template>
+            </v-list>
+        </perfect-scrollbar>
+    </v-navigation-drawer>
+</template>
