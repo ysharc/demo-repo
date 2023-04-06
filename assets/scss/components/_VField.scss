@@ -9,8 +9,13 @@
 }
 
 .v-field {
-    font-size: 14px;
-    color:  rgba(var(--v-theme-textPrimary));
+    font-size: 1.92vh !important;
+    color: #737782;
+    border-radius: 0;
+}
+
+.v-field input {
+    font-size: 1.92vh !important;
 }
 
 // select outlined
@@ -19,4 +24,21 @@
 .v-field--variant-outlined .v-field__outline__notch::after,
 .v-field--variant-outlined .v-field__outline__end {
     opacity: 1;
+}
+
+/* OTP Input */
+.digit-box {
+    height: 5vh;
+    width: 20%;
+    border-bottom: 1px solid #D9D9D9;
+    display: inline-block;
+    margin: 3vh 1vh;
+    padding: 2vh;
+    font-size: 4vh;
+    text-align: center;
+}
+
+.digit-box:focus {
+  border-bottom: 1px solid #383D3B;
+  outline-color: transparent;
 }

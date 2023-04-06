@@ -9,7 +9,7 @@
         <v-avatar size="medium"  variant="flat">
             <img src="/images/profile/user-1.jpg" width="40" alt="Julia" />
         </v-avatar>
-        <v-avatar size="large"  variant="flat">
+        <v-avatar   variant="flat">
             <img src="/images/profile/user-1.jpg" width="48" alt="Julia" />
         </v-avatar>
         <v-avatar size="x-large"  variant="flat">

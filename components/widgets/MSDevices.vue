@@ -2,14 +2,14 @@
 import { computed } from 'vue';
 import { getPrimary, getSecondary, getLightPrimary } from '@/utils/UpdateColors';
 import * as themeColors from '@/theme/LightTheme';
-const root = themeColors.BLUE_THEME.colors
+const root = themeColors.MAIN_THEME.colors
 
 /* Chart */
 const chartOptions1 = computed(() => {
     return {
         labels: ['Computer', 'Tablet', 'Mobile'],
         chart: {
-            height: 150,
+            height: 200,
             type: 'donut',
             foreColor: '#adb0bb',
             fontFamily: `inherit`,
@@ -22,8 +22,8 @@ const chartOptions1 = computed(() => {
             pie: {
                 donut: {
                     size: '84%',
-                    background: 'transparent',
-                    borderRadius: [3],
+                    background: '#F6F6F8',
+                    borderRadius: [20],
                     labels: {
                         show: true,
                         name: {
@@ -35,7 +35,7 @@ const chartOptions1 = computed(() => {
                         },
                         total: {
                             show: true,
-                            fontSize: '12px',
+                            fontSize: '1.2vh',
                             fontWeight: '600',
                             color: '#001919',
                             label: 'CLICKS'
@@ -55,7 +55,7 @@ const chartOptions1 = computed(() => {
         }
     };
 });
-const seriescolumnchart1 = [55, 55, 55];
+const seriescolumnchart1 = [35, 75, 25];
 
 const chartOptions2 = computed(() => {
     return {
@@ -87,7 +87,7 @@ const chartOptions2 = computed(() => {
                         },
                         total: {
                             show: true,
-                            fontSize: '12px',
+                            fontSize: '1.2vh',
                             fontWeight: '600',
                             color: '#001919',
                             label: 'COST'
@@ -107,7 +107,7 @@ const chartOptions2 = computed(() => {
         }
     };
 });
-const seriescolumnchart2 = [55, 55, 55];
+const seriescolumnchart2 = [80, 20, 30];
 
 const chartOptions3 = computed(() => {
     return {
@@ -139,7 +139,7 @@ const chartOptions3 = computed(() => {
                         },
                         total: {
                             show: true,
-                            fontSize: '12px',
+                            fontSize: '1.2vh',
                             fontWeight: '600',
                             color: '#001919',
                             label: 'IMPRESSIONS'
@@ -159,40 +159,40 @@ const chartOptions3 = computed(() => {
         }
     };
 });
-const seriescolumnchart3 = [55, 55, 55];
+const seriescolumnchart3 = [25, 30, 75];
 
 </script>
 <template>
     <v-card elevation="10">
         <v-card-item>
             <div class="d-sm-flex align-center justify-space-between">
-                <v-card-title class="text-h5"><b>Devices</b></v-card-title>
+                <v-card-title class="msh5"><b>Devices</b></v-card-title>
                 <div class="d-flex align-center pb-1 justify-center">
-                    <h6 class="text-subtitle-1 text-medium-emphasis d-flex align-center">
+                    <h6 class="ms-st-3 ms-grey d-flex align-center">
                         <v-icon icon="mdi mdi-checkbox-blank-circle" class="mr-2" size="10"
                             color="graphPrimary"></v-icon>COMPUTER
                     </h6>
-                    <h6 class="text-subtitle-1 text-medium-emphasis pl-5 d-flex align-center">
+                    <h6 class="ms-st-3 ms-grey pl-5 d-flex align-center">
                         <v-icon icon="mdi mdi-checkbox-blank-circle" class="mr-2" size="10" color="graphSecondary"></v-icon>
                         TABLET
                     </h6>
-                    <h6 class="text-subtitle-1 text-medium-emphasis pl-5 d-flex align-center">
+                    <h6 class="ms-st-3 ms-grey pl-5 d-flex align-center">
                         <v-icon icon="mdi mdi-checkbox-blank-circle" class="mr-2" size="10" color="graphTertiary"></v-icon>
                         MOBILE
                     </h6>
                 </div>
             </div>
             <v-row>
-                <v-col cols="4">
-                    <apexchart class="mt-6" type="donut" height="150" :options="chartOptions1" :series="seriescolumnchart1">
+                <v-col cols="12" sm="6" md="4">
+                    <apexchart class="mt-6" type="donut" :options="chartOptions1" :series="seriescolumnchart1">
                     </apexchart>
                 </v-col>
-                <v-col cols="4">
-                    <apexchart class="mt-6" type="donut" height="150" :options="chartOptions2" :series="seriescolumnchart2">
+                <v-col cols="12" sm="6" md="4">
+                    <apexchart class="mt-6" type="donut" :options="chartOptions2" :series="seriescolumnchart2">
                     </apexchart>
                 </v-col>
-                <v-col cols="4">
-                    <apexchart class="mt-6" type="donut" height="150" :options="chartOptions3" :series="seriescolumnchart3">
+                <v-col cols="12" sm="6" md="4">
+                    <apexchart class="mt-6" type="donut" :options="chartOptions3" :series="seriescolumnchart3">
                     </apexchart>
                 </v-col>
             </v-row>

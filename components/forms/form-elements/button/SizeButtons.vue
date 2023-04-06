@@ -12,7 +12,7 @@
             Normal
         </v-btn>
 
-        <v-btn color="primary" size="large" flat>
+        <v-btn color="primary"  flat>
             Large
         </v-btn>
 

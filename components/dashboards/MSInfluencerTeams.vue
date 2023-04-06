@@ -11,10 +11,10 @@ function href() {
     <v-card-text class="pa-5">
       <div class="d-flex justify-space-between px-2">
         <div>
-          <h4 class="text-h5 mb-1"><b>Influencer Teams</b></h4>
+          <h4 class="msh5 mb-1"><b>Influencer Teams</b></h4>
         </div>
         <div>
-          <v-btn variant="text" color="secondary" class="text-h7">
+          <v-btn variant="text" color="secondary" class="ms-subh3">
             View All <v-icon size="30">mdi-menu-down</v-icon>
           </v-btn>
         </div>
@@ -26,9 +26,8 @@ function href() {
             <v-list-item-title>
               <div class="d-flex align-center justify-space-between py-3">
                 <div class="">
-                  <h4 class="text-h6 mt-n1 mb-1">{{ item.title }}</h4>
-                  <div class="truncate-text text-subtitle-2 textSecondary" style="color: #8A8F9C !important;">{{
-                    item.desc }}</div>
+                  <h4 class="ms-subh2 mt-n1 mb-1">{{ item.title }}</h4>
+                  <div class="ms-st-2 ms-grey">{{item.desc }}</div>
                 </div>
                 <div class="d-flex align-center">
                   <div class="d-flex align-center">

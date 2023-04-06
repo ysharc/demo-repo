@@ -29,7 +29,7 @@ import { ClockHour4Icon, MessageCircle2Icon, MessageCircleIcon } from 'vue-table
         </v-avatar>
         <div class="ml-auto">
           <v-btn icon variant="flat">
-            <v-avatar size="large" class="textSecondary">
+            <v-avatar  class="textSecondary">
                         <MessageCircle2Icon size="22" />
                     </v-avatar>
           </v-btn>

@@ -38,5 +38,110 @@ html {
 }
 
 .apexcharts-text tspan{
-    font-family:  'Poppins', sans-serif !important;
+    font-family:  'Inter', sans-serif !important;
+}
+
+.apexcharts-axes-label {
+    font-size: 1.44vh;
+}
+
+/* Fonts */
+
+.msh1 {
+    font-size: 3.37vh;
+    font-weight: 700;
+    line-height: 4.1vh;
+}
+.msh2 {
+    font-size: 2.65vh;
+    font-weight: 700;
+    line-height: 3.2vh;
+}
+.msh3 {
+    font-size: 2.4vh;
+    font-weight: 700;
+    line-height: 2.9vh;
+}
+.msh4 {
+    font-size: 2.17vh;
+    font-weight: 700;
+    line-height: 2.65vh;
+}
+.msh5 {
+    font-size: 1.92vh;
+    font-weight: 700;
+    line-height: 2.17vh;
+}
+.ms-subh2 {
+    font-size: 1.92vh;
+    font-weight: 600;
+    line-height: 2.17vh;
+}
+.ms-subh3 {
+    font-size: 1.68vh;
+    font-weight: 600;
+    line-height: 1.92vh;
+}
+.ms-subh4 {
+    font-size: 1.44vh;
+    font-weight: 600;
+    line-height: 1.92vh;
+}
+.ms-subh5 {
+    font-size: 1.2vh;
+    font-weight: 600;
+    line-height: 1.92vh;
+}
+.ms-st-1 {
+    font-size: 1.92vh;
+    font-weight: 500;
+    line-height: 2.17vh;
+}
+.ms-st-2 {
+    font-size: 1.68vh;
+    font-weight: 500;
+    line-height: 1.92vh;
+}
+.ms-st-3 {
+    font-size: 1.4vh;
+    font-weight: 500;
+    line-height: 1.92vh;
+}
+
+/* Colors */
+
+.ms-grey {
+    color: #8A8F9C !important;
+}
+
+.ms-primary {
+    color: #3584F7 !important;
+}
+
+.ms-secondary {
+    color: #01AFB2 !important;
+}
+
+.ms-orange {
+    color: #FF6E4E !important;
+}
+
+.ms-pink {
+    color: #D42A8C !important;
+}
+
+.ms-yellow {
+    color: #FFB815 !important;
+}
+
+.ms-dark-cyan {
+    color: #001919 !important;
+}
+
+.ms-grey-cyan {
+    color: #383D3B !important;
+}
+
+.ms-lgrey-cyan {
+    color: #626665 !important;
 }

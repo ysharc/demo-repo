@@ -32,6 +32,7 @@ export type ThemeTypes = {
         graphPrimary?: string,
         graphSecondary?: string,
         graphTertiary?: string,
-        mediumPrimary?: string
+        mediumPrimary?: string,
+        greyCyan?: string
     };
 };

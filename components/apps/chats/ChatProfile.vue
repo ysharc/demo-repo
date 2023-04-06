@@ -8,7 +8,7 @@ import user1 from '/images/profile/user-1.jpg';
         <!---Topbar Row-->
         <div class="d-flex gap-2 align-center pa-6">
             <!---User Avatar-->
-            <v-avatar size="large">
+            <v-avatar >
                 <img :src="user1" alt="pro" width="54" />
             </v-avatar>
 

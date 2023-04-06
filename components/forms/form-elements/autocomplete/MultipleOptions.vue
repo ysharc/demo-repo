@@ -25,7 +25,7 @@ const multi_value = ref(['The Dark Knight', 'Fight Club']);
         closable-chips
     >
         <template v-slot:chip>
-            <v-chip label color="primary" size="large" class="mb-1 text-subtitle-1 font-weight-regular"></v-chip>
+            <v-chip label color="primary"  class="mb-1 text-subtitle-1 font-weight-regular"></v-chip>
         </template>
     </v-autocomplete>
 </template>

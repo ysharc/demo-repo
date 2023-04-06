@@ -11,10 +11,10 @@ function href() {
     <v-card-text class="pa-1">
       <div class="d-flex justify-space-between px-0">
         <div>
-          <h2 class="text-h5 mb-1">Recent Influencers</h2>
+          <h2 class="msh3 mb-1">Recent Influencers</h2>
         </div>
         <div>
-          <v-btn variant="text" color="secondary" class="text-h7">
+          <v-btn variant="text" color="secondary" class="ms-subh3">
             View more <v-icon size="30">mdi-menu-down</v-icon>
           </v-btn>
         </div>
@@ -32,13 +32,13 @@ function href() {
                     </v-avatar>
                   </div>
                   <div class="mx-3">
-                    <h4 class="text-h6 mt-n1 mb-1">{{ item.title }}</h4>
-                    <div class="truncate-text text-subtitle-2 textSecondary" style="color: #8A8F9C !important;">{{
+                    <h4 class="ms-subh2 mt-n1 mb-1">{{ item.title }}</h4>
+                    <div class="ms-st-2 ms-grey" style="color: #8A8F9C !important;">{{
                       item.desc }}</div>
                   </div>
                 </div>
                 <div>
-                  <h4 class="text-h7 mt-n1 mb-1" style="color: #3584F7 !important; font-weight: 600;">{{ item.count }}
+                  <h4 class="ms-subh3 ms-primary mt-n1 mb-1">{{ item.count }}
                     Followers</h4>
                 </div>
               </div>

@@ -107,7 +107,7 @@ const toggleReplybox = () => {
     <div class="d-block d-sm-flex gap-3 align-center mb-5 ml-10" v-if="showReplyBox">
         <img :src="comments?.profile.avatar" width="40" class="flex-shrink-0 d-none d-sm-block" alt="avatar" />
         <v-text-field variant="outlined" color="primary" v-model="replyValue" label="Write Reply" hide-details></v-text-field>
-        <v-btn color="secondary" class="mt-3 mt-sm-0" variant="flat" size="large" @click="onSubmit(postId, comments?.id, replyValue)">
+        <v-btn color="secondary" class="mt-3 mt-sm-0" variant="flat"  @click="onSubmit(postId, comments?.id, replyValue)">
             Reply
         </v-btn>
     </div>

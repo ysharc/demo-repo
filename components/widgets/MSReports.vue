@@ -5,7 +5,7 @@ import { getPrimary, getLight100 } from '@/utils/UpdateColors';
 import * as themeColors from '@/theme/LightTheme';
 
 /* Chart */
-const root = themeColors.BLUE_THEME.colors
+const root = themeColors.MAIN_THEME.colors
 const chartOptions = computed(() => {
     return {
         chart: {
@@ -20,10 +20,11 @@ const chartOptions = computed(() => {
         colors: [root.lightprimary, root.lightprimary, root.lightprimary, root.lightprimary, root.lightprimary, root.primary, root.lightprimary],
         plotOptions: {
             bar: {
-                borderRadius: 4,
+                borderRadius: 10,
                 columnWidth: '45%',
                 distributed: true,
-                endingShape: 'rounded'
+                endingShape: 'rounded',
+                borderRadiusApplication: 'end'
             }
         },
         dataLabels: {
@@ -43,11 +44,19 @@ const chartOptions = computed(() => {
             categories: [['SUN'], ['MON'], ['TUE'], ['WED'], ['THU'], ['FRI'], ['SAT']],
             axisBorder: {
                 show: false
+            },
+            labels: {
+                style: {
+                    cssClass: 'apexcharts-axes-label',
+                },
             }
         },
         yaxis: {
             labels: {
-                show: true
+                show: true,
+                style: {
+                    cssClass: 'apexcharts-axes-label',
+                },
             }
         },
     };
@@ -62,31 +71,31 @@ const Chart = {
 };
 </script>
 <template>
-    <v-card elevation="10" >
+    <VCard elevation="10">
         <v-card-item>
-            <div class="d-sm-flex align-start">
+            <div class="d-sm-flex align-start mb-2">
                 <div>
-                    <h5 class="text-h5 title"><b>Reports</b></h5>
+                    <h5 class="msh5"><b>Reports</b></h5>
                 </div>
                 <div class="ml-auto">
                     <div class="d-flex ml-auto">
                         <div class="d-flex align-center">
                             <div class="d-flex align-center px-1">
-                                <v-btn variant="text" color="grey200" class="text-h7">
+                                <v-btn variant="text" color="grey200" class="ms-st-2">
                                     Instagram<v-icon size="30">mdi-menu-down</v-icon>
                                 </v-btn>
                             </div>
                         </div>
                         <div class="d-flex align-center">
                             <div class="d-flex align-center px-1">
-                                <v-btn variant="text" color="grey200" class="text-h7">
+                                <v-btn variant="text" color="grey200" class="ms-st-2">
                                     Likes<v-icon size="30">mdi-menu-down</v-icon>
                                 </v-btn>
                             </div>
                         </div>
                         <div class="d-flex align-center">
                             <div class="d-flex align-center px-1">
-                                <v-btn variant="text" color="grey200" class="text-h7">
+                                <v-btn variant="text" color="grey200" class="ms-st-2">
                                     Last week<v-icon size="30">mdi-menu-down</v-icon>
                                 </v-btn>
                             </div>
@@ -94,7 +103,7 @@ const Chart = {
                     </div>
                 </div>
             </div>
-            <apexchart type="bar" height="275" :options="chartOptions" :series="Chart.series"> </apexchart>
+            <apexchart type="bar" height="320" :options="chartOptions" :series="Chart.series"> </apexchart>
         </v-card-item>
-    </v-card>
+    </VCard>
 </template>

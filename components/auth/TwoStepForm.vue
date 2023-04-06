@@ -9,7 +9,7 @@
             <VTextField></VTextField>
             <VTextField></VTextField>
         </div>
-        <v-btn color="primary" size="large" block flat>Verify My Account</v-btn>
+        <v-btn color="primary"  block flat>Verify My Account</v-btn>
         <h6 class="text-h6 mt-5 font-weight-regular">
             Didn't get the code?
             <NuxtLink to="/" class="text-primary text-subtitle-1 text-decoration-none pl-1 font-weight-medium"> Resend</NuxtLink>

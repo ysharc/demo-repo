@@ -22,7 +22,7 @@ definePageMeta({
                         Please enter the email address associated with your account and We will email you a link to reset your password.
                     </p>
                     <AuthResetForm />
-                    <v-btn size="large" color="lightprimary" to="/auth/login" block class="mt-5 text-primary" flat>Back to Login</v-btn>
+                    <v-btn  color="lightprimary" to="/auth/login" block class="mt-5 text-primary" flat>Back to Login</v-btn>
                 </div>
             </v-col>
         </v-row>

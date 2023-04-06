@@ -51,7 +51,7 @@ const rating = ref(4);
         <v-col lg="4" class="align-streach">
             <v-card variant="outlined" elevation="0" class="d-flex align-center justify-center h-100">
                 <div class="pa-7 py-9">
-                    <v-btn variant="outlined" size="large" color="primary"><PencilIcon size="20" class="mr-1" /> Write a Review</v-btn>
+                    <v-btn variant="outlined"  color="primary"><PencilIcon size="20" class="mr-1" /> Write a Review</v-btn>
                 </div>
             </v-card>
         </v-col>

@@ -26,10 +26,10 @@ const getPrimary = computed(() => {
         return DarkThemeColors.DARK_CYAN_THEME.colors.primary;
     } else if (custmizer.actTheme === 'DARK_ORANGE_THEME') {
         return DarkThemeColors.DARK_ORANGE_THEME.colors.primary;
-    } else if (custmizer.actTheme === 'DARK_BLUE_THEME') {
-        return DarkThemeColors.DARK_BLUE_THEME.colors.primary;
+    } else if (custmizer.actTheme === 'DARK_MAIN_THEME') {
+        return DarkThemeColors.DARK_MAIN_THEME.colors.primary;
     } else {
-        return themeColors.BLUE_THEME.colors.primary;
+        return themeColors.MAIN_THEME.colors.primary;
     }
 });
 
@@ -55,10 +55,10 @@ const getLightPrimary = computed(() => {
         return DarkThemeColors.DARK_CYAN_THEME.colors.lightprimary;
     } else if (custmizer.actTheme === 'DARK_ORANGE_THEME') {
         return DarkThemeColors.DARK_ORANGE_THEME.colors.lightprimary;
-    } else if (custmizer.actTheme === 'DARK_BLUE_THEME') {
-        return DarkThemeColors.DARK_BLUE_THEME.colors.lightprimary;
+    } else if (custmizer.actTheme === 'DARK_MAIN_THEME') {
+        return DarkThemeColors.DARK_MAIN_THEME.colors.lightprimary;
     } else {
-        return themeColors.BLUE_THEME.colors.lightprimary;
+        return themeColors.MAIN_THEME.colors.lightprimary;
     }
 });
 
@@ -83,10 +83,10 @@ const getSecondary = computed(() => {
         return DarkThemeColors.DARK_CYAN_THEME.colors.secondary;
     } else if (custmizer.actTheme === 'DARK_ORANGE_THEME') {
         return DarkThemeColors.DARK_ORANGE_THEME.colors.secondary;
-    } else if (custmizer.actTheme === 'DARK_BLUE_THEME') {
-        return DarkThemeColors.DARK_BLUE_THEME.colors.secondary;
+    } else if (custmizer.actTheme === 'DARK_MAIN_THEME') {
+        return DarkThemeColors.DARK_MAIN_THEME.colors.secondary;
     } else {
-        return themeColors.BLUE_THEME.colors.secondary;
+        return themeColors.MAIN_THEME.colors.secondary;
     }
 });
 
@@ -111,10 +111,10 @@ const getLightSecondary = computed(() => {
         return DarkThemeColors.DARK_CYAN_THEME.colors.lightsecondary;
     } else if (custmizer.actTheme === 'DARK_ORANGE_THEME') {
         return DarkThemeColors.DARK_ORANGE_THEME.colors.lightsecondary;
-    } else if (custmizer.actTheme === 'DARK_BLUE_THEME') {
-        return DarkThemeColors.DARK_BLUE_THEME.colors.lightsecondary;
+    } else if (custmizer.actTheme === 'DARK_MAIN_THEME') {
+        return DarkThemeColors.DARK_MAIN_THEME.colors.lightsecondary;
     } else {
-        return themeColors.BLUE_THEME.colors.lightsecondary;
+        return themeColors.MAIN_THEME.colors.lightsecondary;
     }
 });
 
@@ -133,11 +133,11 @@ const getLight100 = computed(() => {
         custmizer.actTheme === 'DARK_GREEN_THEME' ||
         custmizer.actTheme === 'DARK_CYAN_THEME' ||
         custmizer.actTheme === 'DARK_ORANGE_THEME' ||
-        custmizer.actTheme === 'DARK_BLUE_THEME'
+        custmizer.actTheme === 'DARK_MAIN_THEME'
     ) {
         return DarkThemeColors.DARK_AQUA_THEME.colors.grey100;
     } else {
-        return themeColors.BLUE_THEME.colors.grey100;
+        return themeColors.MAIN_THEME.colors.grey100;
     }
 });
 

@@ -12,8 +12,8 @@ const props = defineProps({
         <div class="d-flex justify-space-between">
             <div class="d-flex py-0 align-center">
                 <div>
-                    <h3 class="text-h3">Good Morning, Alex!</h3>
-                    <h6 class="text-medium-emphasis text-subtitle-1">Welcome to MagSway.</h6>
+                    <h3 class="msh1">Good Morning, Alex!</h3>
+                    <h6 class="ms-st-1 ms-grey">Welcome to MagSway.</h6>
                 </div>
             </div>
         </div>

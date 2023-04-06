@@ -15,7 +15,7 @@ useHead({
 </script>
 
 <template>
-    <v-locale-provider >
+    <v-locale-provider>
         <v-app
             :theme="customizer.actTheme"
             :class="[
@@ -33,7 +33,7 @@ useHead({
                         <RouterView />
                         <!-- <v-btn
                             class="customizer-btn"
-                            size="large"
+                            
                             icon
                             variant="flat"
                             color="primary"

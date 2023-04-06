@@ -6,7 +6,7 @@ import * as themeColors from '@/theme/LightTheme';
 const chartOptions = computed(() => {
     return {
 
-        colors: [themeColors.BLUE_THEME.colors.graphPrimary, themeColors.BLUE_THEME.colors.graphSecondary],
+        colors: [themeColors.MAIN_THEME.colors.graphPrimary, themeColors.MAIN_THEME.colors.graphSecondary],
         fill: {
             type: "",
             opacity: ["0", "0"],
@@ -31,7 +31,19 @@ const chartOptions = computed(() => {
             show: false,
         },
         xaxis: {
-            categories: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+            categories: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+            labels: {
+                style: {
+                    cssClass: 'apexcharts-axes-label',
+                },
+            }
+        },
+        yaxis: {
+            labels: {
+                style: {
+                    cssClass: 'apexcharts-axes-label',
+                },
+            }
         },
         grid: {
             show: true,
@@ -81,18 +93,16 @@ onMounted(() => {
 <template>
     <VCard elevation="10">
         <v-card-text>
-            <div class="d-sm-flex align-start">
+            <div class="d-sm-flex align-start mb-2">
                 <div>
-                    <h5 class="text-h5 title"><b>Traffic</b></h5>
+                    <h5 class="msh5"><b>Traffic</b></h5>
                 </div>
                 <div class="ml-auto">
                     <div class="ml-auto">
                         <div class="d-flex align-center">
-                            <div class="d-flex align-center px-2">
-                                <v-btn variant="text" color="grey200" class="text-h7">
-                                    Last year<v-icon size="30">mdi-menu-down</v-icon>
-                                </v-btn>
-                            </div>
+                            <v-btn variant="text" color="grey200" class="ms-st-2">
+                                Last year<v-icon size="30">mdi-menu-down</v-icon>
+                            </v-btn>
                         </div>
                     </div>
                 </div>
@@ -100,22 +110,22 @@ onMounted(() => {
             <div class="d-flex align-center justify-space-between">
                 <div class="d-flex">
                     <div class="mr-6">
-                        <h5 class="text-h7" style="color: #FF6E4E !important;">IMPRESSIONS</h5>
-                        <h5 class="text-h4">216K</h5>
+                        <h5 class="ms-subh4 ms-orange mb-1">IMPRESSIONS</h5>
+                        <h5 class="msh2">216K</h5>
                     </div>
                     <div>
-                        <h5 class="text-h7" style="color: #D42A8C !important;">VIEWS</h5>
-                        <h5 class="text-h4">6.75K</h5>
+                        <h5 class="ms-subh4 ms-pink mb-1">VIEWS</h5>
+                        <h5 class="msh2">6.75K</h5>
                     </div>
                 </div>
                 <div class="d-flex">
                     <div class="mr-6">
-                        <h5 class="text-h7" style="color: #8A8F9C;">AVG.CPV</h5>
-                        <h5 class="text-h4">$128</h5>
+                        <h5 class="ms-subh4 ms-grey mb-1" style="color: #8A8F9C;">AVG.CPV</h5>
+                        <h5 class="msh2">$128</h5>
                     </div>
                     <div>
-                        <h5 class="text-h7" style="color: #8A8F9C;">VIEW RATE</h5>
-                        <h5 class="text-h4">48%</h5>
+                        <h5 class="ms-subh4 ms-grey mb-1" style="color: #8A8F9C;">VIEW RATE</h5>
+                        <h5 class="msh2">48%</h5>
                     </div>
                 </div>
             </div>

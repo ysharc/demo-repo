@@ -12,3 +12,34 @@
 .v-btn--elevated:hover{
     box-shadow: none;
 }
+
+.v-btn-db {
+    color: #3584F7; 
+    background-color: #F2F6FA; 
+    border-radius: 10% !important;
+}
+
+.btn-primary {
+    color: #fcfcfc !important;
+    background-color: #01AFB2 !important;
+}
+
+.btn-primary-2 {
+    color: #01AFB2 !important;
+    background-color: #01D2D60D !important;
+}
+
+.btn-secondary {
+    color: #383D3B !important;
+    background-color: #F7F7F7 !important;
+}
+
+.btn-onboard {
+    width: 49%;
+}
+
+.btn-outline {
+    outline-color: rgb(var(--v-theme-secondary)) !important;
+    outline-style: solid;
+    outline-width: 1px;
+}

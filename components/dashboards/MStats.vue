@@ -9,14 +9,14 @@ import { statsCardsData } from '@/_mockApis/components/dashboards/MSData';
             <VCard elevation="10">
                 <v-card-text class="pa-5">
                     <div class="d-flex align-center">
-                        <v-btn class="elevation-0" icon dark style="color: #3584F7; background-color: #F2F6FA; border-radius: 10% !important;">
+                        <v-btn class="elevation-0 v-btn-db" icon dark>
                             <component :is="statscard.icon" color="primary" stroke-width="2" size="20" />
                         </v-btn>
                         <div class="ml-2 mr-1">
-                            <h4 class="text-h7" style="font-weight: 600;">
+                            <h4 class="ms-subh4">
                                 {{ statscard.title }}
                             </h4>
-                            <h2 class="text-h4 mt-1">
+                            <h2 class="msh2 mt-1">
                                 <b>{{ statscard.number }}</b>
                             </h2>
                         </div>
