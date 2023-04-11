@@ -10,3 +10,27 @@
         }
     }
 }
+
+.v-tabs, .v-tab {
+    height: 4vh !important;
+}
+
+.vertical {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+.nest-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.d-img-1 {
+    width: 90%;
+}
+
+.d-img-2 {
+    width: 60%;
+}

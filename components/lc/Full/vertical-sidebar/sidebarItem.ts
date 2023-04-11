@@ -71,7 +71,7 @@ const sidebarItem: menu[] = [
   {
     title: "Settings",
     icon: SettingsIcon,
-    to: "/404",
+    to: "/settings",
   },
   {
     title: "Help",

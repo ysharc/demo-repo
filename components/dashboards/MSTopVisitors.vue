@@ -1,6 +1,5 @@
 <script setup>
 import svgMap from "svgmap";
-import "svgmap/dist/svgMap.min.css";
 import { onMounted, ref } from "vue";
 import * as themeColors from '@/theme/LightTheme';
 const root = themeColors.MAIN_THEME.colors
